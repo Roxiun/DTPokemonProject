@@ -1,5 +1,6 @@
 # DT Pokemon Project
 [Website](https://dtpokemonproject.herokuapp.com/)
+Can also be access through [pokemonproject.ga](https://pokemonproject.ga/)
 
 ## What is this?
 This is an example rewrite to [this](https://github.com/MrMusovic/PokemonProject) template. This one adds a simple `flask` backend.
@@ -30,6 +31,47 @@ It is currently in *extremely* early stages and as such doesn't have very good s
 4. `vagrant up`
 5. `vagrant ssh`
 6. Configure the server in `/vagrant` and then run `flask run --host=0.0.0.0`
+
+## Project Structure
+This project structure is based of [this](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-vi-profile-page-and-avatars) tutorial. 
+
+It has the following file system:
+
+```bash
+├── app
+│   ├── templates
+│   │   ├── base.html
+│   │   ├── index.html
+│   │   ├── explore.html
+│   │   ├── pokemon.html
+│   │   ├── 404.html
+│   │   └── 500.html
+│   ├── static
+│   │   ├── styles
+│   │   │   └── mainpage.css
+│   │   ├── favicon.ico
+│   │   ├── PokemonLogo.png
+│   │   ├── PokemonBall.png
+│   │   └── 404.png
+│   ├── __init__.py
+│   ├── routes.py
+│   ├── forms.py
+│   └── errors.py
+├── app.py
+├── config.py
+├── .flaskenv
+├── push.sh
+├── requirements.txt
+├── Dockerfile
+├── .dockerignore
+├── Procfile
+├── runtime.txt
+├── Vagrantfile
+├── boot.sh
+├── README.md
+├── LICENSE
+└── .gitignore
+```
 
 ## Contributing
 Fork this repo and submit a pull request
