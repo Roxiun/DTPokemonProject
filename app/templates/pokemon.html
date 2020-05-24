@@ -1,12 +1,14 @@
 {% extends "base.html" %}
 
 {% block app_content %}
-    <h1>{{ name }} #{{ dex_number }}</h1>
     {% if leng == 1 %}
+        <h1 class="card-title pricing-card-title">{{ name }} <small class="text-muted">#00{{ dex_number }}</small></h1>
         <img src="https://github.com/fanzeyi/pokemon.json/blob/master/images/00{{ dex_number }}.png?raw=true" alt="{{ name }}">
     {% elif leng == 2 %}
+        <h1 class="card-title pricing-card-title">{{ name }} <small class="text-muted">#0{{ dex_number }}</small></h1>
         <img src="https://github.com/fanzeyi/pokemon.json/blob/master/images/0{{ dex_number }}.png?raw=true" alt="{{ name }}">
     {% else %}
+        <h1 class="card-title pricing-card-title">{{ name }} <small class="text-muted">#{{ dex_number }}</small></h1>
         <img src="https://github.com/fanzeyi/pokemon.json/blob/master/images/{{ dex_number }}.png?raw=true" alt="{{ name }}">
     {% endif %}
     <div></div>
