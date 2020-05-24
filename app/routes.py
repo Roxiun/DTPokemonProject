@@ -11,12 +11,12 @@ from app.forms import PokemonSearch
 def index():
     return render_template('index.html', title='Home')
 
-@app.route('/explore')
-def explore():
-    return render_template('explore.html')
+@app.route('/search')
+def search():
+    return render_template('search.html')
 
-@app.route('/explore', methods = ['POST'])
-def explores():
+@app.route('/search', methods = ['POST'])
+def searchs():
     edata = request.form['edata']
     if edata.isnumeric():
         return redirect(url_for(f'pokemon', dex_number=edata))
