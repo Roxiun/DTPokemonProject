@@ -22,6 +22,14 @@ It is currently in *extremely* early stages and as such doesn't have very good s
 4. Build the image - `docker build . -t pokemon-project -f Dockerfile`
 5. Run the container - `docker run -d -p 5000:5000 --rm pokemon-project:latest`
 
+### Method 3 - Vagrant Run (Untested & Not Reccommened)
+1. Instsall [Vagrant](https://www.vagrantup.com/)
+2. Clone this repo - `git clone https://github.com/Roxiun/DTProject.git`
+3. cd into the directory - `cd DTProject/`
+4. `vagrant up`
+5. `vagrant ssh`
+6. Configure the server in `/vagrant` and then run `flask run --host=0.0.0.0`
+
 ## Contributing
 Fork this repo and submit a pull request
 
