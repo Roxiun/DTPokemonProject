@@ -35,6 +35,9 @@ Fork this repo and submit a pull request
 
 ## TODO
 * Facelift (Bootstrap CSS & Facelift in general)
+* Stats for each pokemon
+* Host it for people to see
+* Favicon.ico
 
 ## Resources Used:
 * [Flask Quickstart](https://flask.palletsprojects.com/en/0.12.x/quickstart/)
