@@ -1,4 +1,5 @@
 # DT Pokemon Project
+[Website](https://dtpokemonproject.herokuapp.com/)
 
 ## What is this?
 This is an example rewrite to [this](https://github.com/MrMusovic/PokemonProject) template. This one adds a simple `flask` backend.
@@ -36,7 +37,7 @@ Fork this repo and submit a pull request
 ## TODO
 * Facelift (Bootstrap CSS & Facelift in general)
 * Stats for each pokemon
-* Host it for people to see
+* ~~Host it for people to see~~ [Completed!](https://dtpokemonproject.herokuapp.com/)
 * Favicon.ico
 
 ## Resources Used:
