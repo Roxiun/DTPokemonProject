@@ -2,6 +2,13 @@
 
 {% block app_content %}
     <h1>{{ name }} #{{ dex_number }}</h1>
+    {% if leng == 1 %}
+        <img src="https://github.com/fanzeyi/pokemon.json/blob/master/images/00{{ dex_number }}.png?raw=true" alt="{{ name }}">
+    {% elif leng == 2 %}
+        <img src="https://github.com/fanzeyi/pokemon.json/blob/master/images/0{{ dex_number }}.png?raw=true" alt="{{ name }}">
+    {% else %}
+        <img src="https://github.com/fanzeyi/pokemon.json/blob/master/images/{{ dex_number }}.png?raw=true" alt="{{ name }}">
+    {% endif %}
     {% for type in types %}
         {% if type == 'grass' %}
             <button type="button" class="btn btn-success">{{ type }}</button>

@@ -35,4 +35,6 @@ def pokemon(dex_number):
     name = pokemon.name.title()
     types = pokemon.types
 
-    return render_template('pokemon.html', title=name, dex_number=dex_number, name=name, types=types)
+    leng = len(str(dex_number))
+
+    return render_template('pokemon.html', title=name, dex_number=dex_number, name=name, types=types, leng=leng)
