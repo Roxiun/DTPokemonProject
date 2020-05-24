@@ -79,10 +79,10 @@ Futher Information can be found [here](https://github.com/Roxiun/DTPokemonProjec
 Fork this repo and submit a pull request
 
 ## TODO
-* Facelift (Bootstrap CSS & Facelift in general)
+* Facelift (~~Bootstrap CSS~~ - Added! & Facelift in general)
 * Stats for each pokemon
 * ~~Host it for people to see~~ [Completed!](https://dtpokemonproject.herokuapp.com/)
-* Favicon.ico
+* Favicon.ico - (Added just not currently functioning)
 
 ## Resources Used:
 * [Flask Quickstart](https://flask.palletsprojects.com/en/0.12.x/quickstart/)
