@@ -2,10 +2,21 @@
 .git
 .cache
 
-# macOS Generated Files
+# ignore macOS Generated Files
 .DS_STORE
 
 # ignore all markdown files (md) beside all README*.md other than README-secret.md
 *.md
 !README*.md
 README-secret.md
+LICENSE
+
+# ignore Heroku Files
+Procfile
+runtime.txt
+
+# ignore Vagrant Files
+Vagrantfile
+
+# ignore deployment filles
+push.sh
