@@ -10,6 +10,8 @@
         <img src="https://github.com/fanzeyi/pokemon.json/blob/master/images/{{ dex_number }}.png?raw=true" alt="{{ name }}">
     {% endif %}
     <div></div>
+    <h3>Types</h3>
+    <div></div>
     {% for type in types %}
         {% if type == 'grass' %}
             <button type="button" class="btn btn-success">{{ type }}</button>
