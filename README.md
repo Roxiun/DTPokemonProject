@@ -1,6 +1,7 @@
 # DT Pokemon Project
 [Website](https://dtpokemonproject.herokuapp.com/)
 Can also be access through [pokemonproject.ga](https://pokemonproject.ga/)
+[Original Project](https://github.com/MrMusovic/PokemonProject)
 
 ## What is this?
 This is an example rewrite to [this](https://github.com/MrMusovic/PokemonProject) template. This one adds a simple `flask` backend.
