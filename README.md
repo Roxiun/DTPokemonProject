@@ -73,6 +73,8 @@ It has the following file system:
 └── .gitignore
 ```
 
+Futher Information can be found [here](https://github.com/Roxiun/DTPokemonProject/wiki/Application-Structure)
+
 ## Contributing
 Fork this repo and submit a pull request
 
