@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <h1>{{ name }} #{{ dex_number }}</h1>
+    {% for type in types %}
+        {% if type == 'grass' %}
+            <button type="button" class="btn btn-success">{{ type }}</button>
+        {% elif type == 'fire' %}
+            <button type="button" class="btn btn-warning">{{ type }}</button>
+        {% elif type == 'flying' %}
+            <button type="button" class="btn btn-info">{{ type }}</button>
+        {% elif type == 'water' %}
+            <button type="button" class="btn btn-primary">{{ type }}</button>
+        {% else %}
+            <button type="button" class="btn btn-default">{{ type }}</button>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
