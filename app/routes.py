@@ -1,4 +1,5 @@
 import os
+import random
 import pypokedex
 
 from flask import render_template, redirect, request, url_for, send_from_directory
@@ -26,7 +27,15 @@ def searchs():
 
 @app.route('/explore')
 def explore():
-    return render_template('explore.html')
+    pd = {}
+    for i in range(50):
+        pokemon = pypokedex.get(dex=int(random.randint(1, 807)))
+        name = pokemon.name.title()
+        types = pokemon.types
+
+        leng = len(str(pokemon.dex))
+        pd[name] = {"Name":name, "Types":types, "Leng":leng, "Dex":pokemon.dex}
+    return render_template('explore.html', random_pokemon_dict=pd)
 
 @app.route('/pokemon/<dex_number>')
 def pokemon(dex_number):

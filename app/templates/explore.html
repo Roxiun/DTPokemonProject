@@ -10,4 +10,12 @@
             <input class="btn btn-primary" type="submit" value="Go!">
         </div>
     </form>
+    {% for pokemon in random_pokemon_dict %}
+        <div class="panel panel-default">
+            <div class="panel-body">
+                {{ random_pokemon_dict[pokemon]["Name"] }} #{{ random_pokemon_dict[pokemon]["Dex"] }}
+            </div>
+            <div class="panel-footer">Panel footer</div>
+        </div>
+    {% endfor %}
 {% endblock %}
