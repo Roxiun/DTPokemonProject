@@ -24,6 +24,9 @@ def searchs():
         pdata = pypokedex.get(name=str(edata))
         return redirect(url_for(f'pokemon', dex_number=pdata.dex))
 
+@app.route('/explore')
+def explore():
+    return render_template('explore.html')
 
 @app.route('/pokemon/<dex_number>')
 def pokemon(dex_number):
