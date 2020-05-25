@@ -28,13 +28,14 @@ def searchs():
 @app.route('/explore')
 def explore():
     pd = {}
-    for i in range(50):
+    for i in range(5):
         pokemon = pypokedex.get(dex=int(random.randint(1, 807)))
         name = pokemon.name.title()
         types = pokemon.types
 
         leng = len(str(pokemon.dex))
         pd[name] = {"Name":name, "Types":types, "Leng":leng, "Dex":pokemon.dex}
+    print(pd)
     return render_template('explore.html', random_pokemon_dict=pd)
 
 @app.route('/pokemon/<dex_number>')
