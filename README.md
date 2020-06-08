@@ -91,3 +91,5 @@ Fork this repo and submit a pull request
 * [Flask Quickstart](https://flask.palletsprojects.com/en/0.12.x/quickstart/)
 * [Flask Mega Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-vi-profile-page-and-avatars)
 * [Dockerize a Flask App](https://dev.to/riverfount/dockerize-a-flask-app-17ag)
+
+Made by Roxiun 2020
