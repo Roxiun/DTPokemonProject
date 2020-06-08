@@ -79,7 +79,7 @@ It has the following file system:
 Futher Information can be found [here](https://github.com/Roxiun/DTPokemonProject/wiki/Application-Structure)
 
 ## Contributing
-Fork this repo and submit a pull request
+Fork this repo and submit a pull request. If you are already a contributor just push using the push file.
 
 ## TODO
 * Facelift (~~Bootstrap CSS~~ - Added! & Facelift in general)
