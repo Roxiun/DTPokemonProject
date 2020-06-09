@@ -1,7 +1,7 @@
 # DT Pokemon Project
 [Website](https://dtpokemonproject.herokuapp.com/)
 
-Can also be access through [pokemonproject.ga](https://pokemonproject.ga/)
+Can also be access through [pokemonproject.ga](https://pokemonproject.ga/) (!! Currently Down !!)
 
 [Original Project](https://github.com/MrMusovic/PokemonProject)
 
