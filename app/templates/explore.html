@@ -11,12 +11,13 @@
         </div>
     </form>
     {% for pokemon in random_pokemon_dict %}
+        {% set current_dex = random_pokemon_dict[pokemon]["Dex"] %}
         <div class="card border-primary mb-3" style="width: 18rem;">
             <img class="card-img-top" src="https://github.com/fanzeyi/pokemon.json/blob/master/thumbnails/{{ random_pokemon_dict[pokemon]["Dex"] }}.png?raw=true" alt="{{ name }}">
             <div class="card-body">
               <h5 class="card-title">{{ random_pokemon_dict[pokemon]["Name"] }} #{{ random_pokemon_dict[pokemon]["Dex"] }}</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="{{url_for('pokemon')}}" class="btn btn-primary">Veiw this Pokemon</a>
+              <a href="{{url_for('pokemon', dex_number=current_dex)}}" class="btn btn-primary">Veiw this Pokemon</a>
             </div>
         </div>
     {% endfor %}
